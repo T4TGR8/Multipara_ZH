@@ -1,7 +1,23 @@
 #include <stdio.h>
 #include <string.h>
+#include <windows.h>
+#include <stdlib.h>
+
+void gotoxy (int x, int y)
+{
+    COORD CRD;
+    CRD.X=x;
+    CRD.Y=y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), CRD);
+}
+
+void clrscr()
+{
+    system("@cls||clear");
+}
 
 int main() {
+    clrscr();
     char number[20];
     printf("Enter number: ");
     scanf("%s", number);
