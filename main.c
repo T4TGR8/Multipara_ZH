@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <math.h>
 #include <string.h>
-
 
 int main() {
     char number[20];
@@ -10,44 +8,58 @@ int main() {
 
     for (int i = 0; i < strlen(number); ++i) {
         switch (*(number+i)) {
-            case '0': {
-                printf("nulla");
-            }
-                break;
             case '1': {
-                printf("egy");
+                printf(" \n");
+                printf(" |\n");
+                printf(" |\n");
             }
                 break;
             case '2': {
-                printf("ketto");
+                printf(" _\n");
+                printf(" _|\n");
+                printf("|_ \n");
             }
                 break;
             case '3': {
-                printf("harom");
+                printf("_\n");
+                printf("_|\n");
+                printf("_|\n");
             }
                 break;
             case '4': {
-                printf("negy");
+                printf(" \n");
+                printf("|_|\n");
+                printf("  |\n");
             }
                 break;
             case '5': {
-                printf("ot");
+                printf(" _\n");
+                printf("|_\n");
+                printf(" _|\n");
             }
                 break;
             case '6': {
-                printf("hat");
+                printf(" _\n");
+                printf("|_\n");
+                printf("|_|\n");
             }
                 break;
             case '7': {
-                printf("het");
+                printf("_\n");
+                printf(" |\n");
+                printf(" |\n");
             }
                 break;
             case '8': {
-                printf("nyolc");
+                printf(" _\n");
+                printf("|_|\n");
+                printf("|_|\n");
             }
                 break;
             case '9': {
-                printf("kilenc");
+                printf(" _\n");
+                printf("|_|\n");
+                printf(" _|\n");
             }
                 break;
             default:
@@ -55,7 +67,5 @@ int main() {
                 break;
         }
     }
-
-
     return 0;
 }
